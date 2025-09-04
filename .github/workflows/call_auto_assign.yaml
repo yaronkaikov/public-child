@@ -1,0 +1,19 @@
+name: Call auto assign
+
+on:
+  pull_request:
+    types: [opened]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  call_auto_assign:
+<<<<<<< Updated upstream
+    uses: yaronkaikov/main/.github/workflows/auto_assign.yaml@main
+    #secrets: inherit
+=======
+    uses: yaronkaikov/main/.github/workflows/auto_assign.yaml@master
+    secrets: inherit
+>>>>>>> Stashed changes
