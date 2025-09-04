@@ -7,3 +7,4 @@ on:
 jobs:
   call_auto_assign:
     uses: yaronkaikov/main/.github/workflows/auto_assign.yaml@main
+    secrets: inherit
