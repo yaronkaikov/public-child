@@ -6,4 +6,4 @@ on:
 
 jobs:
   call_auto_assign:
-    uses: yaronkaikov/main/.github/workflows/call_auto_assign.yml@main
+    uses: yaronkaikov/main/.github/workflows/call_auto_assign.yaml@main
