@@ -1,0 +1,9 @@
+name: Call auto assign
+
+on:
+  pull_request_target:
+    types: [opened]
+
+jobs:
+  call_auto_assign:
+    uses: yaronkaikov/main/.github/workflows/auto_assign.yaml@main
