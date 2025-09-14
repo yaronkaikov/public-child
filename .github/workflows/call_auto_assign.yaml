@@ -10,10 +10,5 @@ permissions:
 
 jobs:
   call_auto_assign:
-<<<<<<< Updated upstream
-    uses: yaronkaikov/main/.github/workflows/auto_assign.yaml@main
-    #secrets: inherit
-=======
     uses: yaronkaikov/main/.github/workflows/auto_assign.yaml@master
     secrets: inherit
->>>>>>> Stashed changes
