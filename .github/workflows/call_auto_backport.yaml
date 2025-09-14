@@ -1,0 +1,19 @@
+name: Call auto backport
+
+on:
+  push:
+    branches:
+      - master
+      - next-*.*
+  pull_request_target:
+    types: [labeled]
+    branches: [master, next]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  call_auto_assign:
+    uses: yaronkaikov/main/.github/workflows/add-label-when-promoted.yaml@master
+    secrets: inherit
